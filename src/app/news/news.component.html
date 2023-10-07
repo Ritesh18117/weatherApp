@@ -1,0 +1,29 @@
+<!-- <div class="container ">
+    <h2 class="m-5">For latest News Check-out Our Website</h2>
+    <div class="container m-5" *ngFor="let news of responseData.articles;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{news.urlToImage}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{news.title}}</h5>
+                <p class="card-text">{{news.description}}</p>
+                <a href="{{news.author}}" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+ <div class="container">
+    <h2 class="m-5">News-Logger</h2>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let news of responseData.articles;">
+            <div class="card mb-4">
+                <img class="card-img-top" src="{{news.urlToImage}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{news.title}}</h5>
+                    <p class="card-text">{{news.description}}</p>
+                    <a href="{{news.author}}" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
